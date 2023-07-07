@@ -1,0 +1,344 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-07T10:32:04.372Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.getdataConfig()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.driverLaunch()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "login with valid credentials",
+        "description": "",
+        "id": "validate-the-login-functionality;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch AmazonSite",
+            "match": {
+              "location": "StepDefinition.AmazonLoginSteps.launch_amazon_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters Email and Password",
+            "match": {
+              "location": "StepDefinition.AmazonLoginSteps.user_enters_email_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "8125685121",
+                  "Kanna@123"
+                ]
+              },
+              {
+                "cells": [
+                  "8125685121",
+                  "Kanna@123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "log the data",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user step into homepage",
+            "match": {
+              "location": "StepDefinition.AmazonLoginSteps.user_step_into_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFuctionality_Amazon"
+          },
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      }
+    ],
+    "name": "validate the login functionality",
+    "description": "",
+    "id": "validate-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AmazonLogin.feature",
+    "tags": [
+      {
+        "name": "@LoginFuctionality_Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-07T10:32:05.048Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.getdataConfig()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.driverLaunch()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Searching Function",
+        "description": "",
+        "id": "validate-searching-fun;searching-function",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open site",
+            "match": {
+              "location": "StepDefinition.ValidateSearchBoxSteps.open_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Clickon serach box",
+            "match": {
+              "location": "StepDefinition.ValidateSearchBoxSteps.clickon_serach_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validat ethe outcome of seacrch box",
+            "match": {
+              "location": "StepDefinition.ValidateSearchBoxSteps.validat_ethe_outcome_of_seacrch_box()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchBoxFunction"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Searching Fun",
+    "description": "",
+    "id": "validate-searching-fun",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/ValidateSearchBox.feature",
+    "tags": [
+      {
+        "name": "@SearchBoxFunction",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-07T10:32:05.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.getdataConfig()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.driverLaunch()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I want to write a step with precondition",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "some other precondition",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I complete action",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "some other action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "yet another action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I validate the outcomes",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "check more outcomes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/log.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
