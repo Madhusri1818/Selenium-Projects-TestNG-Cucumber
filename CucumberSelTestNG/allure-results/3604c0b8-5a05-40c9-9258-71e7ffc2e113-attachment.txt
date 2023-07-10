@@ -1,0 +1,1 @@
+java.io.ByteArrayInputStream@7c7d3c46login_Amazon
