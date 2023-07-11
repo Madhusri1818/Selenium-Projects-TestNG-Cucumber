@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="119.393" tests="7" skipped="0" failures="3" errors="0">
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.1" time="33.732">
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@123"..................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................passed
+Then user moves to new contact page.........................................passed
+Then User enter "madhu" and "sri" and "8125685121"..........................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.2" time="17.431">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[CRMPRO]&gt; but was:&lt;[Free CRM - CRM software for customer relationship management, sales, and support.]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[CRMPRO]> but was:<[Free CRM - CRM software for customer relationship management, sales, and support.]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.loginCrmpro.i_validate_the_title(loginCrmpro.java:52)
+	at ✽.I validate the Title(file:///C:/Users/MadhusriChoppa/eclipse-workspace/Ecllipse_oxygen/BDDFramework/Feature/CRMPRO.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@23"...................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................failed
+Then user moves to new contact page.........................................skipped
+Then User enter "naveen" and "k" and "8128756731"...........................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.3" time="31.019">
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@123"..................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................passed
+Then user moves to new contact page.........................................passed
+Then User enter "sarath" and "chandra" and "9010856345".....................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Zoho site_Login feature" name="Valiadte the Login fuctionality - Example #1.1" time="9.421">
+<system-out><![CDATA[
+Given Launch the Browser....................................................passed
+And click on SignIn button..................................................passed
+When Enter email "smadhusri59@gmail.com" in email field.....................passed
+And Enter password  "Kanna@123" in password field...........................passed
+Then click on Login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Zoho site_Login feature" name="Valiadte the Login fuctionality - Example #1.2" time="8.986">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEH2CCO', ip: '192.168.0.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MADHUS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 356848958e1a2d9499faef971762a5c5">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEH2CCO', ip: '192.168.0.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MADHUS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 356848958e1a2d9499faef971762a5c5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at stepDefinition.loginZohoSteps.enter_password_in_password_field(loginZohoSteps.java:54)
+	at ✽.Enter password  "Kanna@123" in password field(file:///C:/Users/MadhusriChoppa/eclipse-workspace/Ecllipse_oxygen/BDDFramework/Feature/LoginZoho.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch the Browser....................................................passed
+And click on SignIn button..................................................passed
+When Enter email "smadhu59@gmail.com" in email field........................passed
+And Enter password  "Kanna@123" in password field...........................failed
+Then click on Login.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Zoho site_Login feature" name="Valiadte the Login fuctionality - Example #1.3" time="9.466">
+<system-out><![CDATA[
+Given Launch the Browser....................................................passed
+And click on SignIn button..................................................passed
+When Enter email "smadhusri59@gmail.com" in email field.....................passed
+And Enter password  "Kanna@123" in password field...........................passed
+Then click on Login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Zoho site_Login feature" name="Valiadte the Login fuctionality - Example #1.4" time="8.925">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEH2CCO', ip: '192.168.0.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MADHUS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 022300976cc8a29c71ba688f9e17e086">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEH2CCO', ip: '192.168.0.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MADHUS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 022300976cc8a29c71ba688f9e17e086
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at stepDefinition.loginZohoSteps.enter_password_in_password_field(loginZohoSteps.java:54)
+	at ✽.Enter password  "123123" in password field(file:///C:/Users/MadhusriChoppa/eclipse-workspace/Ecllipse_oxygen/BDDFramework/Feature/LoginZoho.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch the Browser....................................................passed
+And click on SignIn button..................................................passed
+When Enter email "smadhusri@gmail.com" in email field.......................passed
+And Enter password  "123123" in password field..............................failed
+Then click on Login.........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

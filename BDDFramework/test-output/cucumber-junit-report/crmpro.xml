@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="103.563" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.1" time="39.623">
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@123"..................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................passed
+Then user moves to new contact page.........................................passed
+Then User enter "madhu" and "sri" and "8125685121"..........................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.2" time="22.545">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[CRMPRO]&gt; but was:&lt;[Free CRM - CRM software for customer relationship management, sales, and support.]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[CRMPRO]> but was:<[Free CRM - CRM software for customer relationship management, sales, and support.]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.loginCrmpro.i_validate_the_title(loginCrmpro.java:52)
+	at ✽.I validate the Title(file:///C:/Users/MadhusriChoppa/eclipse-workspace/Ecllipse_oxygen/BDDFramework/Feature/CRMPRO.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@23"...................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................failed
+Then user moves to new contact page.........................................skipped
+Then User enter "naveen" and "k" and "8128756731"...........................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login CRMPRO site and create multiple contacts" name="login to site,create multiple contacts - Example #1.3" time="41">
+<system-out><![CDATA[
+Given Launch application CRMPRO.............................................passed
+When user enters "Madhus12" and "Test@123"..................................passed
+And click on login..........................................................passed
+Then I validate the Title...................................................passed
+Then user moves to new contact page.........................................passed
+Then User enter "sarath" and "chandra" and "9010856345".....................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
